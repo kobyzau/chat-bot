@@ -1,0 +1,15 @@
+spring:
+  profiles.default: dev
+  task.scheduling.pool.size: 10
+
+server.port: ${PORT:8084}
+
+bot:
+  username: ${BOT_USERNAME}
+  token: ${BOT_TOKEN}
+  reconnect: 10000
+
+task:
+  deleteMessage:
+    hoursToLive: 46
+    delay: 60000
