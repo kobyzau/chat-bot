@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=prod target/pbot-1.0-SNAPSHOT.jar
+web: java -jar -Dspring.profiles.active=prod target/common-1.0-SNAPSHOT.jar
