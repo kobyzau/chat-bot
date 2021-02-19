@@ -28,7 +28,10 @@ public class DeleteMessageTask {
 
   @Autowired private Executor taskExecutor;
 
-  @Scheduled(fixedDelayString = "${task.deleteMessage.delay}", zone = "GMT+3.00")
+  @Scheduled(
+      fixedDelayString = "${task.deleteMessage.delay}",
+      zone = "GMT+3.00",
+      initialDelay = 10000)
   public void deleteMessage() {
     System.out.println("Checking messages...");
     LocalDateTime fromTime = DateUtil.currentTime().minusHours(hoursToLive);

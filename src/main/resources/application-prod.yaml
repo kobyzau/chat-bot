@@ -17,7 +17,7 @@ javax:
     schema-generation:
       database:
         action: create
-        
+
 heroku.url: ${HEROKU_URL}
 
 task.pingHeroku.delay: 900000
